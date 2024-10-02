@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es6", // Использование ES6 вместо ES5
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
