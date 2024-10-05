@@ -1,4 +1,4 @@
-import './assets/global.scss';
+import './assets/styles.scss';
 
 // burger
 document.addEventListener('DOMContentLoaded', () => {
