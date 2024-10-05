@@ -3,6 +3,7 @@
     "target": "es6", // Использование ES6 вместо ES5
     "module": "commonjs",
     "strict": true,
+    "moduleResolution": "node",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
