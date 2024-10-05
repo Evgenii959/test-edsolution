@@ -1,5 +1,3 @@
-import './assets/styles.scss';
-
 // burger
 document.addEventListener('DOMContentLoaded', () => {
   const burger = document.querySelector('.header__burger');
