@@ -4,4 +4,3 @@ https://evgenii959.github.io/test-edsolution/
 В дальнейшем хочу:
 1) переписать css в scss
 2) использовать typescript
-3) доделать бургер меню с ссылками из сайдбара
