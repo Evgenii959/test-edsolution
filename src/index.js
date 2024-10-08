@@ -1,11 +1,14 @@
 // burger
-document
-  .querySelector('.header__burger')
-  .addEventListener('click', function () {
-    const sidebar = document.querySelector('.sidebar');
-    this.classList.toggle('active');
-    sidebar.classList.toggle('active');
-  });
+const burger = document.querySelector('.header__burger');
+const sidebar = document.querySelector('.sidebar');
+
+let isMenuOpen = false;
+
+burger.addEventListener('click', function () {
+  isMenuOpen = !isMenuOpen;
+  burger.classList.toggle('active', isMenuOpen);
+  sidebar.classList.toggle('active', isMenuOpen);
+});
 
 // slider
 document.getElementById('submitButton').addEventListener('click', function () {
