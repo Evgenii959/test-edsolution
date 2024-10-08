@@ -1,13 +1,16 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
+  stats: {
+    children: true,
+  },
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[contenthash].js', // Хеш для кэширования
+    filename: 'index.js',
     assetModuleFilename: path.join('images', '[name].[contenthash][ext]'),
     publicPath: '/',
   },
@@ -36,11 +39,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: [
-          MiniCssExtractPlugin.loader, // Изменено на MiniCssExtractPlugin.loader
-          'css-loader',
-          'sass-loader',
-        ],
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
       },
       {
         test: /\.html$/i,
@@ -52,12 +51,14 @@ module.exports = {
     extensions: ['.ts', '.js', '.scss', '.css'],
   },
   plugins: [
+    new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: './index.html',
+      filename: 'index.html',
+      minify: false,
     }),
-    new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
-      filename: '[name].css', // Имя выходного файла CSS
+      filename: 'main.css',
     }),
   ],
 };
