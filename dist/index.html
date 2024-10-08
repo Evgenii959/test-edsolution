@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test-edsolution</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  <script defer src="/index.js"></script><link href="/main.css" rel="stylesheet"></head>
+  <body class="page">
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="header__burger">
+          <span></span>
+        </div>
+        <img src="/images/logo.2de952fd63a76123b9b8.svg" class="header__logo" alt="логотип" />
+        <div class="header__block">
+          <a href="#" class="header__link">People nearby</a>
+          <a href="#" class="header__link">Search</a>
+          <button class="header__button">
+            <p>Premium</p>
+            <img src="/images/premium.933fe25a82bf3f62263e.svg" />
+          </button>
+        </div>
+        <img
+          src="/images/logo-mobile.60fa20369afa4a579685.svg"
+          alt="almaz"
+          class="header__mobile"
+        />
+      </div>
+    </header>
+    <main class="main">
+      <section class="sidebar">
+        <div class="sidebar__block">
+          <img src="/images/avatar.daa0cbbcf8244c8835cc.svg" alt="аватар" />
+          <div>
+            <p class="sidebar__name">Test2412</p>
+            <button class="sidebar__button">GET PREMIUM</button>
+          </div>
+        </div>
+        <nav class="sidebar__links">
+          <ul class="sidebar__link-list">
+            <li class="sidebar__link">
+              <img src="/images/profile.29478bfe19d8424fa06a.svg" alt="профиль" />
+              <a href="#" class="sidebar__link-text">Profile</a>
+            </li>
+            <li class="sidebar__link">
+              <img src="/images/photo.42cffb721e8d3f09a523.svg" alt="фото" />
+              <a href="#" class="sidebar__link-text">My photos</a>
+            </li>
+            <li class="sidebar__link">
+              <img src="/images/messages.2f1630abf9335ac24f79.svg" alt="сообщения" />
+              <a href="#" class="sidebar__link-text">Messages</a>
+            </li>
+            <li class="sidebar__link">
+              <img src="/images/favorites.4fbd82cf53d2dc9344e5.svg" alt="сердце" />
+              <a href="#" class="sidebar__link-text">Favorites</a>
+            </li>
+            <li class="sidebar__link">
+              <img src="/images/guests.fdb6872bf1457609d9db.svg" alt="гость" />
+              <a href="#" class="sidebar__link-text">Guests</a>
+            </li>
+            <li class="sidebar__link">
+              <img src="/images/settings.918e9a79ed18d6d1d21b.svg" alt="настройки" />
+              <a href="#" class="sidebar__link-text">Settings</a>
+            </li>
+            <li class="sidebar__link">
+              <img src="/images/log-out.f2cfeb855ebc80ad6756.svg" alt="выйти" />
+              <a href="#" class="sidebar__link-text">Log out</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section class="credit">
+        <div>
+          <h1 class="credit__title">Закончились кредиты?</h1>
+          <div class="credit__slider">
+            <div class="slider middle">
+              <div class="slides">
+                <input type="radio" name="r" id="r1" checked />
+                <input type="radio" name="r" id="r2" />
+                <input type="radio" name="r" id="r3" />
+                <input type="radio" name="r" id="r4" />
+                <input type="radio" name="r" id="r5" />
+
+                <div class="slide s1">
+                  <div class="slide__card-squad">
+                    <span class="slide__span">One time offer!</span>
+                    <p class="slide__count">
+                      50 <span class="slide__currency">CR</span
+                      ><span class="slide__slash">/</span>$5
+                    </p>
+                  </div>
+                </div>
+
+                <div class="slide s2">
+                  <div class="slide__card-squad">
+                    <div class="slide__price">
+                      <p class="slide__count">150 CR</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="slide s3">
+                  <div class="slide__card-squad">
+                    <div class="slide__price">
+                      <p class="slide__count">300 CR</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="slide s4">
+                  <div class="slide__card-squad">
+                    <div class="slide__price">
+                      <p class="slide__count">500 CR</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="slide s5">
+                  <div class="slide__card-squad">
+                    <div class="slide__price">
+                      <p class="slide__count">1000 CR</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="navigation">
+                <label for="r1" class="bar"></label>
+                <label for="r2" class="bar"></label>
+                <label for="r3" class="bar"></label>
+                <label for="r4" class="bar"></label>
+                <label for="r5" class="bar"></label>
+              </div>
+            </div>
+            <button class="slide__button" id="submitButton">Try now</button>
+          </div>
+        </div>
+        <div div class="credit__container">
+          <div class="credit__offer-block">
+            <p class="credit__sale">Скидка 40%</p>
+            <p class="credit__text">Предложение действует в течение:</p>
+            <p class="credit__timer">00 : 28 : 12</p>
+          </div>
+          <div class="credit__cards-block">
+            <div class="credit__card-squad">
+              <span class="credit__span">One time offer!</span>
+              <div class="credit__price">
+                <p class="credit__count">50</p>
+                <p class="credit__name">CR</p>
+              </div>
+              <button class="credit__button credit__button_squad">
+                Buy now
+              </button>
+            </div>
+            <div class="credit__card-squad">
+              <span class="credit__span">One time offer!</span>
+              <div class="credit__price">
+                <p class="credit__count">150</p>
+                <p class="credit__name">CR</p>
+              </div>
+              <button class="credit__button credit__button_squad">
+                Buy now
+              </button>
+            </div>
+            <div class="credit__card-squad">
+              <span class="credit__span">One time offer!</span>
+              <div class="credit__price">
+                <p class="credit__count">300</p>
+                <p class="credit__name">CR</p>
+              </div>
+              <button class="credit__button credit__button_squad">
+                Buy now
+              </button>
+            </div>
+            <div class="credit__card-squad">
+              <span class="credit__span">One time offer!</span>
+              <div class="credit__price">
+                <p class="credit__count">500</p>
+                <p class="credit__name">CR</p>
+              </div>
+              <button class="credit__button credit__button_squad">
+                Buy now
+              </button>
+            </div>
+            <div class="credit__card-squad">
+              <span class="credit__span">One time offer!</span>
+              <div class="credit__price">
+                <p class="credit__count">1000</p>
+                <p class="credit__name">CR</p>
+              </div>
+              <button class="credit__button credit__button_squad">
+                Buy now
+              </button>
+            </div>
+          </div>
+          <div class="credit__buy-block">
+            <div class="credit__price credit__price_special">
+              <p class="credit__count">1000</p>
+              <p class="credit__name">CR</p>
+            </div>
+            <button class="credit__button">Buy now</button>
+          </div>
+        </div>
+        <div class="credit__checkbox">
+          <label class="custom-checkbox">
+            <input type="checkbox" class="custom-checkbox__input" />
+            <span class="custom-checkbox__checkmark"></span>
+            By clicking Checkbox you agree and accept our
+            <a class="custom-checkbox__link" href="#">Privacy Policy</a>, and
+            <a class="custom-checkbox__link" href="#">Terms of use</a>
+          </label>
+        </div>
+        <div class="stages">
+          <div class="stages__icon">
+            <div class="stages__img-wrapper">
+              <img
+                class="stages__img"
+                src="/images/icon-message.1b8f84042cbdaef52b57.svg"
+                alt="messages"
+              />
+            </div>
+            <p class="stages__text">Отправлять сообщения</p>
+          </div>
+          <div class="stages__icon">
+            <div class="stages__img-wrapper">
+              <img
+                class="stages__img"
+                src="/images/heart.6c3de3edbec10128f887.svg"
+                alt="like"
+              />
+            </div>
+            <p class="stages__text">Пользоваться другими премиум функциями</p>
+          </div>
+          <div class="stages__icon">
+            <div class="stages__img-wrapper">
+              <img
+                class="stages__img"
+                src="/images/icon-present.f8d0095ab74014ffb55b.svg"
+                alt="present"
+              />
+            </div>
+            <p class="stages__text">Оплачивать подарки</p>
+          </div>
+          <div class="stages__icon">
+            <img
+              class="stages__almaz"
+              src="/images/almaz.33111397b19d1c3af37a.svg"
+              alt="алмаз"
+            />
+          </div>
+          <div class="stages__icon">
+            <div class="stages__img-wrapper">
+              <img
+                class="stages__img"
+                src="/images/visible.cdd23f8754377b1b44f5.svg"
+                alt="visible"
+              />
+            </div>
+            <p class="stages__text">Просматривать скрытые фото</p>
+          </div>
+          <div class="stages__icon">
+            <div class="stages__img-wrapper">
+              <img
+                class="stages__img"
+                src="/images/icon-message.1b8f84042cbdaef52b57.svg"
+                alt="messages"
+              />
+            </div>
+            <p class="stages__text">Просматривать скрытые фото</p>
+          </div>
+          <div class="stages__icon">
+            <div class="stages__img-wrapper">
+              <img
+                class="stages__img"
+                src="/images/icon-present.f8d0095ab74014ffb55b.svg"
+                alt="present"
+              />
+            </div>
+            <p class="stages__text">Просматривать скрытые фото</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="/images/index.9a58ea79cca3b1ccd13f.js"></script>
+  </body>
+</html>
