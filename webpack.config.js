@@ -13,7 +13,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',
     assetModuleFilename: path.join('images', '[name].[contenthash][ext]'),
-    publicPath: './',
+    publicPath: '',
   },
   mode: 'development',
   devServer: {
