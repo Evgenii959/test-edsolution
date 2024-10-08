@@ -1,4 +1,4 @@
-import '../src/assets/styles.scss';
+import '../src/assets/styles.scss'
 
 // burger
 const burger = document.querySelector('.header__burger');
