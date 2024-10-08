@@ -1,3 +1,5 @@
+import './assets/styles.scss'
+
 // burger
 const burger = document.querySelector('.header__burger');
 const sidebar = document.querySelector('.sidebar');
