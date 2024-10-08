@@ -8,7 +8,7 @@
   margin: 0 auto;
   color: #000;
   font-family: "Ubuntu", sans-serif;
-  background-image: url(/images/first-bg.850bf3982dec1aefc2dc.png), url(/images/second-bg.704956d609c16a370faf.png);
+  background-image: url(./images/first-bg.850bf3982dec1aefc2dc.png), url(./images/second-bg.704956d609c16a370faf.png);
   background-position: -150px 250px, 100% 200px;
   background-repeat: no-repeat;
 }
