@@ -9,7 +9,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[contenthash].js', // Хеш для кэширования
     assetModuleFilename: path.join('images', '[name].[contenthash][ext]'),
-    publicPath: '',
+    publicPath: '/',
   },
   mode: 'development',
   devServer: {
