@@ -1,3 +1,5 @@
+import '../src/assets/styles.scss';
+
 // burger
 var burger = document.querySelector('.header__burger');
 var sidebar = document.querySelector('.sidebar');
