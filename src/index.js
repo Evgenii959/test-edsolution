@@ -1,14 +1,12 @@
 // burger
 document.addEventListener('DOMContentLoaded', () => {
-  const burger = document.querySelector('.header__burger');
+  document.getElementById('burger').addEventListener('click', function () {
+    document.querySelector('header').classList.toggle('open');
+  });
 
-  if (burger) {
-    burger.addEventListener('click', () => {
-      burger.classList.toggle('active');
-    });
-  } else {
-    console.error('Элементы burger или nav не найдены!');
-  }
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('active');
+  });
 });
 
 // slider
@@ -40,7 +38,7 @@ document.getElementById('submitButton').addEventListener('click', function () {
   console.log('Данные отправлены:', slideData);
 });
 
-// timer 
+// timer
 
 function startTimer(duration, display) {
   let timer = duration,

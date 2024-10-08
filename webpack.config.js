@@ -7,7 +7,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'main.js',
+    filename: '[name].[contenthash].js', // Хеш для кэширования
     assetModuleFilename: path.join('images', '[name].[contenthash][ext]'),
     publicPath: '',
   },
@@ -23,11 +23,9 @@ module.exports = {
       {
         test: /\.js$/,
         use: 'babel-loader',
-        exclude: '/node_modules/',
+        exclude: /node_modules/,
       },
-      // добавили правило для обработки файлов
       {
-        // регулярное выражение, которое ищет все файлы с такими расширениями
         test: /\.(png|svg|jpg|gif|woff(2)?|eot|ttf|otf)$/,
         type: 'asset/resource',
       },
@@ -38,7 +36,11 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
+        use: [
+          MiniCssExtractPlugin.loader, // Изменено на MiniCssExtractPlugin.loader
+          'css-loader',
+          'sass-loader',
+        ],
       },
       {
         test: /\.html$/i,
@@ -47,13 +49,15 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ['.*', '.ts', '.js', '.scss', '.css'],
+    extensions: ['.ts', '.js', '.scss', '.css'],
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: './index.html',
     }),
     new CleanWebpackPlugin(),
-    new MiniCssExtractPlugin(),
+    new MiniCssExtractPlugin({
+      filename: '[name].css', // Имя выходного файла CSS
+    }),
   ],
 };

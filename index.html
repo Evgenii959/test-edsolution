@@ -8,19 +8,13 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
     <link rel="stylesheet" href="./src/assets/styles.css" />
   </head>
   <body class="page">
     <header class="header">
       <div class="header__wrapper">
-        <div class="header__burger">
-          <div class="header__burger-line"></div>
-          <div class="header__burger-line"></div>
-          <div class="header__burger-line"></div>
+        <div class="header__burger" id="burger">
+          <span></span>
         </div>
         <img src="./src/images/logo.svg" class="header__logo" alt="логотип" />
         <div class="header__block">
@@ -81,146 +75,144 @@
         </nav>
       </section>
       <section class="credit">
-        <div class="credit-page">
+        <div>
           <h1 class="credit__title">Закончились кредиты?</h1>
-          <div class="section-slider">
-            <div class="content-slider">
-              <div class="slider middle">
-                <div class="slides">
-                  <input type="radio" name="r" id="r1" checked />
-                  <input type="radio" name="r" id="r2" />
-                  <input type="radio" name="r" id="r3" />
-                  <input type="radio" name="r" id="r4" />
-                  <input type="radio" name="r" id="r5" />
+          <div class="credit__slider">
+            <div class="slider middle">
+              <div class="slides">
+                <input type="radio" name="r" id="r1" checked />
+                <input type="radio" name="r" id="r2" />
+                <input type="radio" name="r" id="r3" />
+                <input type="radio" name="r" id="r4" />
+                <input type="radio" name="r" id="r5" />
 
-                  <div class="slide s1">
-                    <div class="slide__card-squad">
-                      <span class="slide__span">One time offer!</span>
-                      <p class="slide__count">
-                        50 <span class="slide__currency">CR</span
-                        ><span class="slide__slash">/</span>$5
-                      </p>
-                    </div>
+                <div class="slide s1">
+                  <div class="slide__card-squad">
+                    <span class="slide__span">One time offer!</span>
+                    <p class="slide__count">
+                      50 <span class="slide__currency">CR</span
+                      ><span class="slide__slash">/</span>$5
+                    </p>
                   </div>
+                </div>
 
-                  <div class="slide s2">
-                    <div class="slide__card-squad">
-                      <div class="slide__price">
-                        <p class="slide__count">150 CR</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="slide s3">
-                    <div class="slide__card-squad">
-                      <div class="slide__price">
-                        <p class="slide__count">300 CR</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="slide s4">
-                    <div class="slide__card-squad">
-                      <div class="slide__price">
-                        <p class="slide__count">500 CR</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="slide s5">
-                    <div class="slide__card-squad">
-                      <div class="slide__price">
-                        <p class="slide__count">1000 CR</p>
-                      </div>
+                <div class="slide s2">
+                  <div class="slide__card-squad">
+                    <div class="slide__price">
+                      <p class="slide__count">150 CR</p>
                     </div>
                   </div>
                 </div>
-                <div class="navigation">
-                  <label for="r1" class="bar"></label>
-                  <label for="r2" class="bar"></label>
-                  <label for="r3" class="bar"></label>
-                  <label for="r4" class="bar"></label>
-                  <label for="r5" class="bar"></label>
+
+                <div class="slide s3">
+                  <div class="slide__card-squad">
+                    <div class="slide__price">
+                      <p class="slide__count">300 CR</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="slide s4">
+                  <div class="slide__card-squad">
+                    <div class="slide__price">
+                      <p class="slide__count">500 CR</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="slide s5">
+                  <div class="slide__card-squad">
+                    <div class="slide__price">
+                      <p class="slide__count">1000 CR</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <button class="slide__button" id="submitButton">Try now</button>
+              <div class="navigation">
+                <label for="r1" class="bar"></label>
+                <label for="r2" class="bar"></label>
+                <label for="r3" class="bar"></label>
+                <label for="r4" class="bar"></label>
+                <label for="r5" class="bar"></label>
+              </div>
             </div>
+            <button class="slide__button" id="submitButton">Try now</button>
           </div>
-          <div div class="credit__container">
-            <div class="credit__offer-block">
-              <p class="credit__sale">Скидка 40%</p>
-              <p class="credit__text">Предложение действует в течение:</p>
-              <p class="credit__timer">00 : 28 : 12</p>
+        </div>
+        <div div class="credit__container">
+          <div class="credit__offer-block">
+            <p class="credit__sale">Скидка 40%</p>
+            <p class="credit__text">Предложение действует в течение:</p>
+            <p class="credit__timer">00 : 28 : 12</p>
+          </div>
+          <div class="credit__cards-block">
+            <div class="credit__card-squad">
+              <span class="credit__span">One time offer!</span>
+              <div class="credit__price">
+                <p class="credit__count">50</p>
+                <p class="credit__name">CR</p>
+              </div>
+              <button class="credit__button credit__button_squad">
+                Buy now
+              </button>
             </div>
-            <div class="credit__cards-block">
-              <div class="credit__card-squad">
-                <span class="credit__span">One time offer!</span>
-                <div class="credit__price">
-                  <p class="credit__count">50</p>
-                  <p class="credit__name">CR</p>
-                </div>
-                <button class="credit__button credit__button_squad">
-                  Buy now
-                </button>
+            <div class="credit__card-squad">
+              <span class="credit__span">One time offer!</span>
+              <div class="credit__price">
+                <p class="credit__count">150</p>
+                <p class="credit__name">CR</p>
               </div>
-              <div class="credit__card-squad">
-                <span class="credit__span">One time offer!</span>
-                <div class="credit__price">
-                  <p class="credit__count">150</p>
-                  <p class="credit__name">CR</p>
-                </div>
-                <button class="credit__button credit__button_squad">
-                  Buy now
-                </button>
-              </div>
-              <div class="credit__card-squad">
-                <span class="credit__span">One time offer!</span>
-                <div class="credit__price">
-                  <p class="credit__count">300</p>
-                  <p class="credit__name">CR</p>
-                </div>
-                <button class="credit__button credit__button_squad">
-                  Buy now
-                </button>
-              </div>
-              <div class="credit__card-squad">
-                <span class="credit__span">One time offer!</span>
-                <div class="credit__price">
-                  <p class="credit__count">500</p>
-                  <p class="credit__name">CR</p>
-                </div>
-                <button class="credit__button credit__button_squad">
-                  Buy now
-                </button>
-              </div>
-              <div class="credit__card-squad">
-                <span class="credit__span">One time offer!</span>
-                <div class="credit__price">
-                  <p class="credit__count">1000</p>
-                  <p class="credit__name">CR</p>
-                </div>
-                <button class="credit__button credit__button_squad">
-                  Buy now
-                </button>
-              </div>
+              <button class="credit__button credit__button_squad">
+                Buy now
+              </button>
             </div>
-            <div class="credit__buy-block">
-              <div class="credit__price credit__price_special">
+            <div class="credit__card-squad">
+              <span class="credit__span">One time offer!</span>
+              <div class="credit__price">
+                <p class="credit__count">300</p>
+                <p class="credit__name">CR</p>
+              </div>
+              <button class="credit__button credit__button_squad">
+                Buy now
+              </button>
+            </div>
+            <div class="credit__card-squad">
+              <span class="credit__span">One time offer!</span>
+              <div class="credit__price">
+                <p class="credit__count">500</p>
+                <p class="credit__name">CR</p>
+              </div>
+              <button class="credit__button credit__button_squad">
+                Buy now
+              </button>
+            </div>
+            <div class="credit__card-squad">
+              <span class="credit__span">One time offer!</span>
+              <div class="credit__price">
                 <p class="credit__count">1000</p>
                 <p class="credit__name">CR</p>
               </div>
-              <button class="credit__button">Buy now</button>
+              <button class="credit__button credit__button_squad">
+                Buy now
+              </button>
             </div>
           </div>
-          <div class="credit__checkbox">
-            <label class="custom-checkbox">
-              <input type="checkbox" class="custom-checkbox__input" />
-              <span class="custom-checkbox__checkmark"></span>
-              By clicking Checkbox you agree and accept our
-              <a class="custom-checkbox__link" href="#">Privacy Policy</a>, and
-              <a class="custom-checkbox__link" href="#">Terms of use</a>
-            </label>
+          <div class="credit__buy-block">
+            <div class="credit__price credit__price_special">
+              <p class="credit__count">1000</p>
+              <p class="credit__name">CR</p>
+            </div>
+            <button class="credit__button">Buy now</button>
           </div>
+        </div>
+        <div class="credit__checkbox">
+          <label class="custom-checkbox">
+            <input type="checkbox" class="custom-checkbox__input" />
+            <span class="custom-checkbox__checkmark"></span>
+            By clicking Checkbox you agree and accept our
+            <a class="custom-checkbox__link" href="#">Privacy Policy</a>, and
+            <a class="custom-checkbox__link" href="#">Terms of use</a>
+          </label>
         </div>
         <div class="stages">
           <div class="stages__icon">
