@@ -7,6 +7,7 @@ module.exports = {
   stats: {
     children: true,
   },
+  devtool: false,
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
