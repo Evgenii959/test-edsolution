@@ -480,9 +480,7 @@ li {
 }
 
 @media (max-width: 1000px) {
-  .sidebar {
-    display: none;
-  }
+
   .header {
     min-height: 50px;
   }
@@ -539,6 +537,24 @@ li {
   .header__burger.active::after {
     bottom: 50%;
     transform: rotate(45deg) translate(0, 50%);
+  }
+
+  .sidebar {
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    top: 55px;
+    bottom: 0;
+    left: 5px;
+    right: 0;
+    height: 400px;
+    width: 200px;
+    z-index: 4;
+    background-color: #9564aa;
+  }
+
+  .sidebar.active {
+    display: flex;
   }
 
   .header__logo,

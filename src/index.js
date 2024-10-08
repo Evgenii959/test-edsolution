@@ -1,7 +1,11 @@
 // burger
-document.querySelector('.header__burger').addEventListener('click', function() {
-  this.classList.toggle('active');
-})
+document
+  .querySelector('.header__burger')
+  .addEventListener('click', function () {
+    const sidebar = document.querySelector('.sidebar');
+    this.classList.toggle('active');
+    sidebar.classList.toggle('active');
+  });
 
 // slider
 document.getElementById('submitButton').addEventListener('click', function () {
