@@ -1,13 +1,10 @@
 // burger
-document.addEventListener('DOMContentLoaded', () => {
-  document.getElementById('burger').addEventListener('click', function () {
-    document.querySelector('header').classList.toggle('open');
+document
+  .querySelector('.header__burger')
+  .addEventListener('click', function () {
+    this.classList.toggle('active');
+    document.querySelector('.sidebar').classList.toggle('open');
   });
-
-  burger.addEventListener('click', () => {
-    burger.classList.toggle('active');
-  });
-});
 
 // slider
 document.getElementById('submitButton').addEventListener('click', function () {
