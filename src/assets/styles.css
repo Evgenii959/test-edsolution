@@ -480,7 +480,6 @@ li {
 }
 
 @media (max-width: 1000px) {
-
   .header {
     min-height: 50px;
   }
@@ -555,6 +554,18 @@ li {
 
   .sidebar.active {
     display: flex;
+  }
+
+  .sidebar__links {
+    margin-top: 0;
+  } 
+
+  .sidebar__link-text {
+    color: #fff;
+  }
+
+  .sidebar__block {
+    color: #fff;
   }
 
   .header__logo,
