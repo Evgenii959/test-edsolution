@@ -8,7 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="dist/main.css">
+    <!--     <link rel="stylesheet" href="dist/main.css"> -->
   </head>
   <body class="page">
     <header class="header">
@@ -77,21 +77,21 @@
       <section class="credit">
         <div>
           <h1 class="credit__title">Закончились кредиты?</h1>
-          <div class="credit__slider">
-            <div class="slider middle">
-              <div class="slides">
+          <div class="credit__slider-container">
+            <div class="credit__slider credit_middle">
+              <div class="credit__slides">
                 <input type="radio" name="r" id="r1" checked />
                 <input type="radio" name="r" id="r2" />
                 <input type="radio" name="r" id="r3" />
                 <input type="radio" name="r" id="r4" />
                 <input type="radio" name="r" id="r5" />
 
-                <div class="slide s1">
-                  <div class="slide__card-squad">
-                    <span class="slide__span">One time offer!</span>
-                    <p class="slide__count">
-                      50 <span class="slide__currency">CR</span
-                      ><span class="slide__slash">/</span>$5
+                <div class="credit__slide s1">
+                  <div class="credit__card-squad">
+                    <span class="credit__span">One time offer!</span>
+                    <p class="credit__count">
+                      50 <span class="credit__currency">CR</span
+                      ><span class="credit__slash">/</span>$5
                     </p>
                   </div>
                 </div>
@@ -128,15 +128,15 @@
                   </div>
                 </div>
               </div>
-              <div class="navigation">
-                <label for="r1" class="bar"></label>
-                <label for="r2" class="bar"></label>
-                <label for="r3" class="bar"></label>
-                <label for="r4" class="bar"></label>
-                <label for="r5" class="bar"></label>
+              <div class="credit__navigation">
+                <label for="r1" class="credit__bar"></label>
+                <label for="r2" class="credit__bar"></label>
+                <label for="r3" class="credit__bar"></label>
+                <label for="r4" class="credit__bar"></label>
+                <label for="r5" class="credit__bar"></label>
               </div>
             </div>
-            <button class="slide__button" id="submitButton">Try now</button>
+            <button class="credit__button" id="submitButton">Try now</button>
           </div>
         </div>
         <div div class="credit__container">
@@ -206,81 +206,81 @@
           </div>
         </div>
         <div class="credit__checkbox">
-          <label class="custom-checkbox">
-            <input type="checkbox" class="custom-checkbox__input" />
-            <span class="custom-checkbox__checkmark"></span>
+          <label class="credit__custom-checkbox">
+            <input type="checkbox" class="credit__checkbox-input" />
+            <span class="credit__checkmark"></span>
             By clicking Checkbox you agree and accept our
-            <a class="custom-checkbox__link" href="#">Privacy Policy</a>, and
-            <a class="custom-checkbox__link" href="#">Terms of use</a>
+            <a class="credit__link" href="#">Privacy Policy</a>, and
+            <a class="credit__link" href="#">Terms of use</a>
           </label>
         </div>
-        <div class="stages">
-          <div class="stages__icon">
-            <div class="stages__img-wrapper">
+        <div class="credit__stages">
+          <div class="credit__stages-icon">
+            <div class="credit__stages-wrapper">
               <img
-                class="stages__img"
+                class="credit__stages-img"
                 src="./src/images/icon-message.svg"
                 alt="messages"
               />
             </div>
-            <p class="stages__text">Отправлять сообщения</p>
+            <p class="credit__stages-text">Отправлять сообщения</p>
           </div>
-          <div class="stages__icon">
-            <div class="stages__img-wrapper">
+          <div class="credit__stages-icon">
+            <div class="credit__stages-wrapper">
               <img
-                class="stages__img"
+                class="credit__stages-img"
                 src="./src/images/heart.svg"
                 alt="like"
               />
             </div>
-            <p class="stages__text">Пользоваться другими премиум функциями</p>
+            <p class="credit__stages-text">Пользоваться другими премиум функциями</p>
           </div>
-          <div class="stages__icon">
-            <div class="stages__img-wrapper">
+          <div class="credit__stages-icon">
+            <div class="credit__stages-wrapper">
               <img
-                class="stages__img"
+                class="credit__stages-img"
                 src="./src/images/icon-present.svg"
                 alt="present"
               />
             </div>
-            <p class="stages__text">Оплачивать подарки</p>
+            <p class="credit__stages-text">Оплачивать подарки</p>
           </div>
-          <div class="stages__icon">
+          <div class="credit__stages-icon">
             <img
-              class="stages__almaz"
+              class="credit__almaz"
               src="./src/images/almaz.svg"
               alt="алмаз"
             />
           </div>
-          <div class="stages__icon">
-            <div class="stages__img-wrapper">
+          <div class="credit__stages-icon">
+            <div class="credit__stages-wrapper">
               <img
-                class="stages__img"
+                class="credit__stages-img"
                 src="./src/images/visible.svg"
                 alt="visible"
               />
             </div>
-            <p class="stages__text">Просматривать скрытые фото</p>
+            <p class="credit__stages-text">Просматривать скрытые фото</p>
           </div>
-          <div class="stages__icon">
-            <div class="stages__img-wrapper">
+          <div class="credit__stages-icon">
+            <div class="credit__stages-wrapper">
               <img
-                class="stages__img"
+                class="credit__stages-img"
                 src="./src/images/icon-message.svg"
                 alt="messages"
               />
             </div>
-            <p class="stages__text">Просматривать скрытые фото</p>
+            <p class="credit__stages-text">Просматривать скрытые фото</p>
           </div>
-          <div class="stages__icon">
-            <div class="stages__img-wrapper">
+          <div class="credit__stages-icon">
+            <div class="credit__stages-wrapper">
               <img
-                class="stages__img"
+                class="credit__stages-img"
                 src="./src/images/icon-present.svg"
                 alt="present"
               />
             </div>
-            <p class="stages__text">Просматривать скрытые фото</p>
+            <p class="credit__stages-text">Просматривать скрытые фото</p>
           </div>
         </div>
       </section>
