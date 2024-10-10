@@ -137,6 +137,12 @@ window.onload = function () {
   var display = document.querySelector('.credit__timer');
   startTimer(thirtyMinutes, display);
 };
+
+// паралакс
+window.addEventListener('scroll', function () {
+  var scrolled = window.pageYOffset;
+  document.querySelector('.page').style.backgroundPosition = "calc(-150px + ".concat(scrolled * 0.2, "px) calc(250px + ").concat(scrolled * 0.4, "px), \n    calc(100% - ").concat(scrolled * 0.1, "px) calc(200px + ").concat(scrolled * 0.3, "px)");
+});
 })();
 
 /******/ })()
