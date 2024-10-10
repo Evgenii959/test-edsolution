@@ -6,16 +6,29 @@ $highlight-color: #ffcf2d;
 $text-color-white: #ffffff;
 $primary-color: #9564aa;
 
+html {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
 .page {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0 auto;
   color: #000;
-  font-family: 'Ubuntu', sans-serif;
   background-image: url('../images/first-bg.png'),
     url('../images/second-bg.png');
   background-position: -150px 250px, 100% 200px;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .header {
@@ -32,6 +45,10 @@ $primary-color: #9564aa;
     margin: auto;
   }
 
+  &__burger {
+    display: none;
+  }
+
   &__block {
     display: flex;
     align-items: center;
@@ -42,8 +59,11 @@ $primary-color: #9564aa;
     margin-right: 80px;
   }
 
-  &__burger {
-    display: none;
+  &__link {
+    color: $header-text-color;
+    &:hover {
+      opacity: 0.5;
+    }
   }
 
   &__button {
@@ -63,11 +83,6 @@ $primary-color: #9564aa;
   &__mobile {
     display: none;
   }
-
-  &__link {
-    text-decoration: none;
-    color: $header-text-color;
-  }
 }
 
 .main {
@@ -78,10 +93,6 @@ $primary-color: #9564aa;
   gap: 30px;
 }
 
-li {
-  list-style: none;
-}
-
 .sidebar {
   background-color: $sidebar-bg;
   width: 238px;
@@ -90,36 +101,12 @@ li {
   border: 2px solid $sidebar-border-color;
   padding: 15px;
 
-  &__link-list {
-    padding: 0;
-  }
-
   &__block {
     display: flex;
     align-items: center;
     gap: 15px;
     padding-bottom: 18px;
     border-bottom: 2px solid $sidebar-border-color;
-  }
-
-  &__links {
-    margin: 20px 13px;
-    gap: 60px;
-  }
-
-  &__link {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    margin-bottom: 23px;
-  }
-
-  &__link-text {
-    font-weight: 400;
-    font-size: 16px;
-    margin: 0;
-    text-decoration: none;
-    color: #000000;
   }
 
   &__name {
@@ -139,20 +126,35 @@ li {
     font-size: 10px;
     font-weight: 400;
   }
+
+  &__links {
+    margin: 20px 13px;
+    gap: 60px;
+  }
+
+  &__link-list {
+    padding: 0;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 23px;
+  }
+
+  &__link-text {
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+    color: #000000;
+  }
 }
 
 .credit {
   max-width: 870px;
   width: 100%;
   margin-top: -10px;
-
-  &__slider-container {
-    display: none;
-  }
-
-  &__page {
-    margin-top: -10px;
-  }
 
   &__title {
     margin: 0;
@@ -163,6 +165,10 @@ li {
     border-bottom: 2px solid $primary-color;
     text-shadow: 1px -1px 0 rgba(0, 0, 0, 0.25), 1px -1px 0 rgba(0, 0, 0, 0.25),
       1px 1px 0 rgba(0, 0, 0, 0.25), 5px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  &__slider-container {
+    display: none;
   }
 
   &__cards-block {
@@ -375,7 +381,6 @@ li {
   }
   &__link {
     color: #9564aa;
-    text-decoration: none;
   }
   &__stages {
     display: grid;

@@ -1,4 +1,4 @@
-import '../src/assets/styles.scss'
+import '../src/assets/styles.scss';
 
 // burger
 const burger = document.querySelector('.header__burger');
@@ -67,3 +67,13 @@ window.onload = function () {
   const display = document.querySelector('.credit__timer');
   startTimer(thirtyMinutes, display);
 };
+
+// паралакс
+window.addEventListener('scroll', function () {
+  const scrolled = window.pageYOffset;
+
+  document.querySelector('.page').style.backgroundPosition = `calc(-150px + ${
+    scrolled * 0.2
+  }px) calc(250px + ${scrolled * 0.4}px), 
+    calc(100% - ${scrolled * 0.1}px) calc(200px + ${scrolled * 0.3}px)`;
+});
