@@ -33,6 +33,9 @@ body {
   display: flex;
   width: 100%;
 }
+.header__logo {
+  cursor: pointer;
+}
 .header__wrapper {
   display: flex;
   justify-content: space-between;
@@ -114,17 +117,24 @@ body {
   font-weight: 400;
 }
 .sidebar__links {
-  margin: 20px 13px;
   gap: 60px;
 }
 .sidebar__link-list {
-  padding: 0;
+  margin: 10px 0 0;
+  padding-left: 0px;
 }
 .sidebar__link {
   display: flex;
   align-items: center;
   gap: 30px;
-  margin-bottom: 23px;
+  padding: 10px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  transition: border-color 0.3s;
+}
+.sidebar__link:hover {
+  border-color: rgba(149, 100, 170, 0.2);
 }
 .sidebar__link-text {
   font-weight: 400;
@@ -228,7 +238,7 @@ body {
   margin: 7px 0 11px;
 }
 .credit__price_special {
-  margin: 0 0 10px 70px;
+  margin: 0 0 10px 90px;
 }
 .credit__count {
   font-size: 24px;
@@ -268,7 +278,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 41px;
+  gap: 20px;
   max-width: 890px;
   height: 70px;
   width: 100%;
@@ -422,11 +432,11 @@ body {
     align-items: center;
     justify-content: flex-start;
     cursor: pointer;
-    width: 30px;
-    height: 18px;
+    width: 23px;
+    height: 14px;
   }
   .header__burger span {
-    width: 80%;
+    width: 100%;
     height: 2px;
     background-color: #fff;
     transform: scale(1);
@@ -480,9 +490,6 @@ body {
   }
   .sidebar__links {
     margin-top: 0;
-  }
-  .sidebar__link-text, .sidebar__block {
-    color: #fff;
   }
   .sidebar__link-text, .sidebar__block {
     color: #fff;
